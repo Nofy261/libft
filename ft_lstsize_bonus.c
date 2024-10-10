@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:49:20 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 10:31:53 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-    int count;
+	int	count;
 
-    count = 0;
-    while (lst != NULL)
-    {
-        lst = lst->next;
-        count++;
-    }
-    return(count);
+	count = 0;
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		count++;
+	}
+	return (count);
 }

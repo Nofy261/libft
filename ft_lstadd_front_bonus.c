@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:47:39 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 10:28:20 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if (*lst == NULL)// s il pointe vers vide ou rien
-    {   *lst = new; //le prochain element sera la tete
-        return ;
-    }
-    new->next = *lst;//lepointeur du nouvel element va pointer vers la tete *list;  
-    *lst = new;// donc *list n est plus le premier element mais devient l element apres new
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
+	new->next = *lst;
+	*lst = new;
 }

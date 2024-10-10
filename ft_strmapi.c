@@ -1,50 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 13:08:58 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 09:59:21 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-static int  ft_strlen(const char *str)
+static int	ft_strlen(const char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
-char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    int    i;
-    char    *result;
+	int		i;
+	char	*result;
 
-    if (!s)
-	return (NULL);
-    i = 0;
-    result = malloc(sizeof(char) * ft_strlen(s) + 1);
-    if (!result)
-        return (NULL);
-    while (s[i])
-    {
-        result[i] = f(i,s[i]);
-        i++;
-    }
-    result[i] = '\0';
-    return (result);
+	if (!s)
+		return (NULL);
+	i = 0;
+	result = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!result)
+		return (NULL);
+	while (s[i])
+	{
+		result[i] = f(i, s[i]);
+		i++;
+	}
+	result[i] = '\0';
+	return (result);
 }
 
-char f(unsigned int i, char c)
+char	f(unsigned int i, char c)
 {
-    if (i == 0)//transforme en M le caractere qui se trouve a l index 0 
-        return ('M');
-    return (c);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    char s[] = "Bonjour";
-    char *result;
-
-    result = ft_strmapi(s, f);
-    printf("%s\n", result);
-    free (result);
+	if (i == 0)
+		return ('M');
+	return (c);
 }

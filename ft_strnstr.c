@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 13:09:11 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 09:01:47 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -6,18 +18,18 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	save = 0;
-	if (little[save] == '\0')// si little est vide, on renvoie big car rien a chercher
+	if (little[save] == '\0')
 		return ((char *)big);
-	if (big == NULL && len <= 0) // !len 
-		return ((char *)big); // cad null ? 
+	if (big == NULL && len <= 0)
+		return ((char *)big);
 	while (big[save] && save < len)
 	{
 		j = 0;
-		while (big[save + j] == little[j])// si le 1er caractere a chercher a ete trouver, big[save+j] permet de garder save a la premiere occurence trouvé
-		{ 
-			if (save + j >= len) // si len depasse big 
-				break ;//on sort de la grande boucle et on renvoie null
-			if (little[j + 1] == '\0')// si on a atteint la fin de chaine little 
+		while (big[save + j] == little[j])
+		{
+			if (save + j >= len)
+				break ;
+			if (little[j + 1] == '\0')
 				return ((char *)&big[save]);
 			j++;
 		}

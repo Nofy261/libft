@@ -1,13 +1,22 @@
-void    ft_lstiter(t_list *lst, void(*f)(void *))
-{
-    if ((!lst) || (!f))
-        return ;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:48:07 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 10:53:56 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    while (lst != NULL)
-    { 
-        f(lst->content);//applique f au premier contenu
-        lst = lst->next;//puis on passe de contenu a contenu jusqu a ce que lst pointe vers null
-                        //lst est un pointeur qui pointe vers le 1er element puis vers le suivant etc...
-                        //l element c est lst->content
-    }
+void	ft_lstiter(t_list *lst, void (*f)(void *))
+{
+	if ((!lst) || (!f))
+		return ;
+	while (lst != NULL)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

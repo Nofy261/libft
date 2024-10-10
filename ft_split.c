@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 13:06:57 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 09:28:17 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-static size_t	count_words(char const *s, char c)//size_t = non negative, peut contenir de tres grandes valeurs
+static size_t	count_words(char const *s, char c)
 {
 	size_t	words;
 	size_t	i;
@@ -15,17 +26,17 @@ static size_t	count_words(char const *s, char c)//size_t = non negative, peut co
 	return (words);
 }
 
-static void	fill_tab(char *new, char const *s, char c)//copie un mot dans s vers un nouveau tableau new 
+static void	fill_tab(char *new, char const *s, char c)
 {
-	size_t	i;                                  // new doit avoir suffisament de memoire allouer pour accueillir la copie
+	size_t	i;
 
 	i = 0;
-	while (s[i] && s[i] != c) //on copie s dans new jusqu a ce que i = c le delimitateur, quand i = c on arrete la copie 
+	while (s[i] && s[i] != c)
 	{
 		new[i] = s[i];
 		i++;
 	}
-	new[i] = '\0';//new contient maintenant un mot et on marque la fin du mot par '\0';
+	new[i] = '\0';
 }
 
 static void	set_mem(char **tab, char const *s, char c)

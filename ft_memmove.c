@@ -1,30 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:49:52 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 08:15:26 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
-void    *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    char    *d;
-    char    *s;
-    size_t  i;
+	char	*d;
+	char	*s;
+	size_t	i;
 
-    d = (char *)dest;
-    s = (char *)src;
-    i = 0;
-
-    if (d > s) //d et s se chevauchent
-    {
-        while (n > 0)//copie de la fin vers le debut pour eviter d'ecraser les donnees sources
-        {
-            d[n - 1] = s[n - 1];//n-1 est le dernier element du tableau et n = taille du tab
-            n--;
-        }
-    }
-    else
-    {
-        while (i < n) //pas de chevauchement, copie normal
-        {
-            d[i] = s[i];
-            i++;
-        }
-    }
-    return (dest);
+	d = (char *)dest;
+	s = (char *)src;
+	i = 0;
+	if (d > s)
+	{
+		while (n > 0)
+		{
+			d[n - 1] = s[n - 1];
+			n--;
+		}
+	}
+	else
+	{
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dest);
 }

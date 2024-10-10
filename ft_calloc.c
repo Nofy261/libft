@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:44:09 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 09:06:21 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
-//#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -29,14 +40,4 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	ft_memset(ptr, '\0', stotal);
 	return (ptr);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    void    *ptr;
-    ptr = ft_calloc(8, 1);
-    printf("%p\n", ptr);
-    free(ptr);
 }

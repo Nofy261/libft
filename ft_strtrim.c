@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 13:09:24 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 09:23:54 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s) // pas le mien
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -10,7 +22,7 @@ size_t	ft_strlen(const char *s) // pas le mien
 	return (i);
 }
 
-char	*ft_strdup(const char *s) // pas le mien 
+char	*ft_strdup(const char *s)
 {
 	char		*tab;
 	int			i;
@@ -29,7 +41,7 @@ char	*ft_strdup(const char *s) // pas le mien
 	return ((char *)tab);
 }
 
-char	*ft_strchr(const char *s, int c) // pas le mien
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
@@ -45,7 +57,7 @@ char	*ft_strchr(const char *s, int c) // pas le mien
 	return (NULL);
 }
 
-char	*ft_strrchr(const char *s, int c)// pas le mien
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*last_occurence;
@@ -65,7 +77,7 @@ char	*ft_strrchr(const char *s, int c)// pas le mien
 	return (last_occurence);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)// pas le mien
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	j;
@@ -91,36 +103,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)// pas le mien
 	return (tab);
 }
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char    *result;
-    int i;
-    int j;
+	char	*result;
+	int		i;
+	int		j;
 
-    i = 0;
-    if (s1[0] == '\0')
-        return (NULL);
-    j = ft_strlen(s1);
-    while (s1[i] && ft_strchr(set, s1[i])) // skip les caracteres identique a set du debut de la chaine
-        i++;
-    while (j > 0 && ft_strrchr(set, s1[j - 1]))
-        j--;
-    result = ft_substr(s1, i, j - i);
-    if (!result)
-        return (NULL);    
-    return (result);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    char    tab[] = "                   Bonjdour                   ";
-    char    set[] = "UUUUUU";
-    char    *result;
-
-    result = ft_strtrim(tab, set);
-    printf("%s\n", result);
-    free(result);
-    return (0);
+	i = 0;
+	if (s1[0] == '\0')
+		return (NULL);
+	j = ft_strlen(s1);
+	while (s1[i] && ft_strchr(set, s1[i]))
+		i++;
+	while (j > 0 && ft_strrchr(set, s1[j - 1]))
+		j--;
+	result = ft_substr(s1, i, j - i);
+	if (!result)
+		return (NULL);
+	return (result);
 }

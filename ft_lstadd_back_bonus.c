@@ -1,14 +1,26 @@
-void ft_lstadd_back(t_list **lst, t_list *new)
-{
-    if (*lst == NULL)
-    {
-        *lst = new// si un jour il y a un element, lst va pointer vers celui la (new)
-        return ;
-    }
-    t_list  *tmp;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/07 12:47:31 by nolecler          #+#    #+#             */
+/*   Updated: 2024/10/08 10:38:22 by nolecler         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    tmp = *lst;
-    while (tmp->next != NULL)//tmp va pointer sur chaque element depuis le debut 
-        tmp = tmp->next;// j avance
-    tmp->next = new;//je rajoute le nouveau element a la fin
+void	ft_lstadd_back(t_list **lst, t_list *new)
+{
+	t_list	*tmp;
+
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
+	tmp = *lst;
+	while (tmp->next != NULL)
+		tmp = tmp->next;
+	tmp->next = new;
 }
