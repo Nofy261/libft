@@ -9,7 +9,7 @@ ft_bzero   ✅   ok
 ft_memcpy      ok
 ft_memmove      N ❌
 ft_strlcpy      N ❌
-ft_strlcat      N ❌
+ft_strlcat      N ❌// vrai fonction a tester
 ft_toupper     ok 
 ft_tolower     ok
 ft_strchr      ok une question a resoudre 
