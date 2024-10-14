@@ -6,22 +6,22 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:18 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/07 13:09:19 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/14 17:45:55 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//#include "libft.h"
 
 #include <string.h>
+#include <stdio.h>
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)//seg fault quand je mets printf dans le main
 {
 	int	i;
 
 	i = 0;
 	while (s[i])
 		i++;
-    //if (s[i] == (char)c) // Ne donne pas le meme resultat quand j enleve , pas besoin selon gpt 
-    //   return ((char *)&s[i]); 
 	while (i >= 0)
 	{
 		if (s[i] == (char)c)
@@ -30,21 +30,13 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*char	*ft_strrchr(const char *s, int c)
+
+int main(void)
 {
-	int		i;
-	char	*t;
-
-	i = 0;
-	t = NULL;
-	while (s[i] != '\0')
-	{
-		if (s[i] == (char)c)
-			t = ((char *)&s[i]);
-		i++;
-	}
-	if (s[i] == (char)c)
-		t = ((char *)&s[i]);
-	return (t);
-}*/
-
+	const char s[] = "Bnjur";
+	int c = 111;
+ 	char *s2 = ft_strrchr(s, c);
+	printf("%s\n", s2);
+	printf("%s\n", strrchr(s, c));
+	return (0);
+}

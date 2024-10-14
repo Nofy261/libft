@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 static size_t count_words(const char *s, char c)//static = la fonction ne peut etre appelee que dans ce fichier

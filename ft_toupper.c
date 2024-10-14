@@ -6,16 +6,13 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:48 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 08:50:24 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/14 11:45:40 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-
 int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 'a' && c <= 'z')
 		return (c -= 32);
-	else
-		return (c);
+	return (c);
 }

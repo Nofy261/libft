@@ -6,9 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:42:47 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/07 12:43:01 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:12:22 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

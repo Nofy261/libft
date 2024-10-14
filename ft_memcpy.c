@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
@@ -18,8 +19,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const char	*src2;
 	size_t		i;
 
-	if (src == NULL || dest == NULL)
-		return (NULL);
 	dest2 = dest;
 	src2 = src;
 	i = 0;

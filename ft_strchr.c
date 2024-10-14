@@ -6,11 +6,9 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:07:04 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 08:59:02 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/14 17:30:41 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
