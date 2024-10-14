@@ -1,0 +1,25 @@
+La fonction ﻿strlcpy permet de copier une chaîne de caractères dans une autre chaîne en limitant le nombre de caractères copiés. 
+
+1-
+size_t ft_strlcpy(char *dest, const char *src, size_t size);
+
+Const char * src = pointeur vers un caractere non modifiable ou constant = chaîne à copier src
+Char = pointeur vers un caractere modifiable = la chaîne qui va recevoir la copie 
+size_t size : la taille maximale de dst, y compris l’espace pour le caractère nul de fin =positive ou nulle
+
+2-
+La fonction ﻿strlcpy permet de copier une chaîne de caractères dans une autre chaîne en limitant le nombre de caractères copiés. 
+
+
+3-
+Retourne la longueur de src
+
+
+Pour utiliser la fonction ﻿strlcpy , il faut inclure la bibliothèque #include <bsd/string.h>
+
+Pour utiliser cette bibliothèque, il faut ajouter l'option ﻿-lbsd à la compilation. 
+
+
+ 
+
+

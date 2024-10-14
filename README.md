@@ -15,19 +15,20 @@ ft_tolower     ok ✅
 ft_strchr      ok ✅ une question a resoudre 
 ft_strrchr     N  ✅ seg fault quand on met printf sinon code bon
 ft_strncmp     ok ✅ 
-ft_memchr      ok
-ft_memcmp      ok
+ft_memchr      ok ✅ 
+ft_memcmp      ok ✅ 
 ft_strnstr ✅ ok comprehension a revoir
-ft_atoi        ok
-ft_calloc      ok
-ft_strdup      ok
+ft_atoi        ok ✅ 
+ft_calloc      ok  ✅ 
+ft_strdup      ok  ✅ 
+
 NORMINETTE
-ft_substr (A REVOIR CAR SEG FAULT)
+ft_substr   ✅  (A REVOIR comprehension)
 ft_strjoin (A TERMINER)
 ft_strtrim   ✅ (A COMPRENDRE) TOO MANY FUNCTION IN FILE
 ft_split (A FAIRE) ✅ A TESTER
 ft_itoa      ✅ ok
-ft_strmapi (FAIT) n ok
+ft_strmapi (FAIT) n ok ✅ 
 ft_striteri (FAIT) n ok
 
 ft_putchar_fd ✅ n ok

@@ -1,0 +1,12 @@
+ft_memcmp - Comparaison de zones mémoire peu importe leur contenu
+ 
+1-
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+
+2-
+La fonction memcmp() compare les n premiers octets de s1 et s2 peu importe les types de données. 
+
+
+3-
+Renvoie la difference entre s1 et s2 ou 0 si pas de différences
+

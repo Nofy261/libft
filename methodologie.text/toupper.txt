@@ -1,0 +1,11 @@
+#include <ctype.h> 
+
+
+1-
+Int toupper(int c);
+
+2-
+Convertit la lettre c en majuscule si c'est possible.
+
+3-
+La valeur renvoyée est celle de la lettre convertie, ou bien c si la conversion n'était pas possible.

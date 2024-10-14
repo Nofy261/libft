@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char *result;
+    char const s[] = "Hello World!";
+    unsigned int start = 20;
+    size_t len = 5;
+
+    result = ft_substr(s, start, len);
+    printf("%s\n", result);
+    free(result);
+}

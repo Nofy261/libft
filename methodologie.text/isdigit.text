@@ -1,0 +1,13 @@
+1- Prototype
+2- Que fait la fonction
+3- Return ?
+
+1-
+Int isdigit(int c);
+
+2-
+Vérifie si l'on a un chiffre (0 a 9).
+
+3-
+Return 0 si c n'est pas un chiffre
+Return 1 si c = chiffre 

@@ -1,0 +1,22 @@
+
+Les Makefiles sont des fichiers utilisés par le programme make(1) afin d’automatiser un ensemble d’actions permettant la génération de fichiers, la plupart du temps résultant d’une compilation.
+
+
+
+Fichiers :
+-commande
+-commande
+
+Makefiles sont en général utilisés pour automatiser la compilation de projets informatiques, et dans ce cas les lignes de commandes s’occuperont de la compilation (par exemple avec la commande `gcc)
+
+
+
+Etapes:
+
+Connaitre les fichiers qu on va utiliser 
+
+.c = .o transformation car l ordi comprend que le .o (binaire)
+
+
+Libft.a = va regrouper tous les fichiers objets (.o)
+C'est aussi le nom de fichier de sortie 

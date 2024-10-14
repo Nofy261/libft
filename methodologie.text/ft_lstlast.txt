@@ -1,0 +1,14 @@
+
+t_list *ft_lstlast(t_list *lst);
+
+
+
+
+Renvoie le dernier élément de la liste.
+
+
+
+Retourne le dernier élément de la liste.
+
+
+Parcourir liste , et verifier si le pointeur pointe vers NULL ça veut dire que c'est le dernier element de la liste. Si c est le cas, on renvoie le prochain. 

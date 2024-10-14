@@ -1,0 +1,20 @@
+
+#include <string.h>
+Rechercher un caractère dans une chaine
+
+
+1-
+Char *ft_strchr(const char *s, int c);
+
+
+2-
+La fonction strchr() cherche la première occurrence d'un caractère dans une chaine. 
+
+
+3-
+renvoit un pointeur sur le caractère correspondant, ou NULL si le caractère n'a pas été trouvé. 
+Soit le caractère recherché est présent dans la chaîne et, dans ce cas, un pointeur sur la première occurrence du caractère vous sera retourné. Soit le caractère n'est pas présent dans la chaîne et dans ce cas, le pointeur NULL vous sera renvoyé. 
+
+
+
+la fonction strchr est très proche de la fonction strrchr. La différence réside dans le fait que strchr renvoi la position de la PREMIERE occurrence du caractère recherché alors que strrchr renvoi la DERNIERE occurrence (recherche par la droite : r signifiant right). 

@@ -1,0 +1,8 @@
+1-
+Int ft_tolower(int c);
+
+2-
+Convertit c en lettre minuscule.
+
+3-
+Retourne la valeur en minuscule ou renvoie c inchangé . 

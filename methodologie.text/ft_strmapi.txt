@@ -1,0 +1,31 @@
+
+
+1-
+Char	*ft_strmapi(char *const s, char (*f)(unsigned int, char));
+
+
+2-
+Cette fonction permet de transformer chaque caractère de s à l'aide de la fonction f.
+La fonction ft_strmapi crée une copie de la chaîne s en appliquant la fonction f à chaque caractère, en fonction de son index.
+Le 2e argument qui est un pointeur sur une fonction permet de transformer chaque caractère.
+
+
+3-
+Renvoie la chaine transformée ou null.
+
+
+char (*f)(unsigned int, char) = représente un pointeur sur une fonction.
+
+La syntaxe char (*f)(unsigned int, char) se lit comme suit :
+
+    char indique le type de valeur que la fonction retourne.
+    (*f) indique que f est un pointeur vers une fonction.
+    (unsigned int, char) indique les types des paramètres que la fonction prend.
+
+
+char	f(unsigned int i, char c)
+{
+	if (i == 0)
+		return ('M');
+	return (c);
+}

@@ -1,0 +1,9 @@
+1-
+Int isalnum(int c);
+
+2-
+Vérifie si l'on a un caractère alphanumérique (un chiffre ou une lettre).
+
+3-
+Return 1 si c = chiffre ou une lettre
+Return 0 si c n'est pas un caractère alphanumérique.

@@ -1,0 +1,9 @@
+1-
+Int ft_isprint(int c);
+
+2-
+Vérifie si le caractère est imprimable y compris l'espace. (32 a 126)
+
+3-
+Return 1 si oui.
+Return 0 si non.

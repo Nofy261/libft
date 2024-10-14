@@ -1,0 +1,12 @@
+Memmove : Memory move
+copier une zone memoire, src et dest peuvent se chevaucher contrairement a memcpy. 
+memmove est conçue pour gérer les cas où les zones source et destination se chevauchent.
+
+1-
+Void *ft_memmove(void *dest, const void *src, size_t n);
+
+2-
+La fonction memmove() copie n octets depuis la zone mémoire src vers la zone mémoire dest. Les deux zones  peuvent  se  chevaucher :  la  copie s’effectue  comme  si  src  était  premièrement  copiée dans un tableau temporaire ne chevauchant pas src ou dest puis il est copié vers  dest.
+
+3-
+Renvoie un pointeur sur dest.

@@ -1,0 +1,11 @@
+Convertir une chaine en entier 
+
+1-
+int atoi(const char *nptr);
+
+
+2-
+Convertir char en int
+
+3-
+Le résultat de la conversion soit un entier (des chiffres)

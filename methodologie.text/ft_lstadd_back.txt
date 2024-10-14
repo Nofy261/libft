@@ -1,0 +1,14 @@
+
+void ft_lstadd_back(t_list **lst, t_list *new);
+
+
+
+Ajoute l’élément ’new’ à la fin de la liste.
+
+
+
+Pas de valeur de retour car void
+
+
+
+Je fais pointer le pointeur de new vers NULL

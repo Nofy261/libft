@@ -1,0 +1,19 @@
+
+1-
+char *ft_strtrim(char const *s1, char const *set);
+
+
+
+2-
+supprime les espaces au début et à la fin d'une chaîne de caractères. 
+
+
+
+
+3-
+La chaine de caractère trimmée ou null si l'allocation n'a pas fonctionné.
+
+
+Notes:
+
+

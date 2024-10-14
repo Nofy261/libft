@@ -1,0 +1,12 @@
+1-
+size_t ft_strlen(const char *s);
+
+2-
+ calcule la longueur de la chaîne de caractères s, sans compter l'octet nul « \0 » final.  
+
+3-
+Return le nombre de caractère dans la chaine s.
+
+
+size_t = valeur que positive,(non-signé) plus grand que un int.
+Int = peut être négatif ou positif.

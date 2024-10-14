@@ -1,0 +1,17 @@
+1- Prototype
+2- Que fait la fonction
+3- Qu est ce qu elle retourne 
+
+
+
+1- 
+int isalpha(int c);
+
+2- Verifie si le caractère est un alphabet ou pas.
+
+
+3 - Retourn 0 si c n'est pas un alphabet
+    Retourne une valeur non nulle si c = alphabet
+
+
+  

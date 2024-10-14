@@ -1,0 +1,9 @@
+ft_lstadd_front
+
+void ft_lstadd_front(t_list **lst, t_list *new);
+
+
+Ajoute un maillon en debut de liste
+
+
+Ne retourne rien void

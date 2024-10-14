@@ -1,0 +1,22 @@
+
+
+void ft_lstclear(t_list **lst, void (*del)(void*));
+
+
+Supprimer tous les elements de la liste a l aide de la fonction del puis free.
+
+
+
+Pas retour car void
+
+
+
+Typedef struct s_list
+{
+ Void	*content;
+ Struct s_list	*next;
+} t_list;
+
+Del(*lst = *lst->next)
+Lst == NULL;
+free(lst); 

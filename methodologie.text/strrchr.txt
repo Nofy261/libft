@@ -1,0 +1,47 @@
+#include <string.h>
+
+Chercher un caractère dans une chaine de caractère.
+
+1-
+Char *ft_strrchr(const char *s, int c);
+
+2-
+La fonction strrchr() renvoie un pointeur sur la dernière occurrence du caractère c dans la chaîne s. 
+
+3-
+strrchr() renvoit un pointeur sur le caractère correspondant, ou NULL si le caractère n'a pas été trouvé. L'octet nul final est considéré comme faisant partie de la chaîne, de telle sorte que si « \0 » est indiqué pour c, ces fonctions renvoient un pointeur sur la fin de chaîne. 
+
+
+la fonction strrchr est très proche de la fonction strchr. La différence réside dans le fait que strchr renvoi la position de la première occurrence du caractère recherché alors que strrchr renvoi la dernière occurrence (recherche par la droite : r signifiant right). 
+
+
+Exemple: char dest[20] = "Computer program";
+
+Avec strchr , le résultat attendu est "puter program". (Affiche a partir du premier p trouvé)
+Avec strrchr , le résultat sera "program".(Affiche a partir du dernier p trouvé).
+
+#include <stdio.h>
+#include <string.h>
+ 
+#define SIZE 40
+ 
+int main(void)
+{
+  char buf[SIZE] = "computer program";
+  char * ptr;
+  int    ch = 'p';
+ 
+  /* This illustrates strchr */
+  ptr = strchr( buf, ch );
+  printf( "The first occurrence of %c in '%s' is '%s'\n", ch, buf, ptr );
+ 
+  /* This illustrates strrchr */
+  ptr = strrchr( buf, ch );
+  printf( "The last occurrence of %c in '%s' is '%s'\n", ch, buf, ptr );
+}
+ 
+/*****************  Output should be similar to:  *****************
+ 
+The first occurrence of p in 'computer program' is 'puter program'
+The last occurrence of p in 'computer program' is 'program'
+*/

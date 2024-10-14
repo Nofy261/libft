@@ -1,0 +1,19 @@
+
+
+1-
+char * strnstr(const char *  s1 , const char *  s2 , size_t  len );
+
+2-
+Cherche l'integralité de s2 dans s1 a partir de la premiere lettre de s2.
+Cherche le premier occurence de s2 dans s1 jusqu'à a n taille
+
+3-
+Renvoie la chaine de caractère a partir de l occurence trouvé ou null si s2 n'a pas été trouveé
+
+
+EX:
+ S1 = "Hello my friend"
+ S2 = " friend"
+ Len = 16
+
+Resultat = "friend" (s1)

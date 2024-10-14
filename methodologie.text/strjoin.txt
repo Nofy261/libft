@@ -1,0 +1,17 @@
+Concatenation de deux chaines 
+
+1-
+Char	*ft_strjoin(char const *s1, char const *s2);
+
+
+
+2-
+Concatenation de deux chaines avec allocation de memoire 
+S1 la 1ere chaine de caractère et s2 la 2eme. 
+
+
+
+
+
+3-
+Retourne la nouvelle chaine allouée ou null. 

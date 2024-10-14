@@ -10,19 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdlib.h>
 
-int ft_strlen(const char *str)
-{
-    int i;
-
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);    
-}
-
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -31,36 +20,29 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     unsigned int    j;
     
 
-    i = start;
-    j = 0;
-    
-    //if (ft_strlen(s) - start < len)//s'assure qu'on ne dépasse pas la fin de la chaîne s lorsque on crée la sous-chaîne.
-    // len = ft_strlen(s);
-    //if (start >= ft_strlen(s))
-     //   return (strdup(""));
-    result = malloc(sizeof(char) * len + 1);
+    i = 0;
+    if (!s)
+        return (NULL);
+    if ((unsigned int)ft_strlen(s) < start )
+        return (ft_strdup(""));
+    j = ft_strlen(s + start);
+    if ( j < len)
+        len = j;
+    result = malloc(sizeof(char) * (len + 1));
     if (!result)
         return (NULL);
-    while (s[i] && j < len)
+    while (i< len)
     {       
-        result[j] = s[i];
-        j++;
+        result[i] = s[start + i];
         i++;
     }
-    result[j] = '\0';  
+    result[i] = '\0';  
     return (result);
 }
 
-#include <stdio.h>
 
-int main(void)
-{
-    char *result;
-    char const s[] = "Hello World!";
-    unsigned int start = 20;
-    size_t len = 5;
 
-    result = ft_substr(s, start, len);
-    printf("%s\n", result);
-    free(result);
-}
+
+
+
+

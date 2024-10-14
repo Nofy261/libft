@@ -1,0 +1,11 @@
+Comparaison de deux chaines
+
+1-
+Int ft_strncmp(const char *s1, const char *s2, size_t n);
+
+2-
+Compare s2 à s1 jusqu'a n caractère . 
+
+3-
+Renvoie la difference entre les deux, soit positive soit negative soit 0 si pas de difference.
+

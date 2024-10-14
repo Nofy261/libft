@@ -1,0 +1,7 @@
+int ft_lstsize(t_list *lst);
+
+
+Compte le nombre d’éléments de la liste.
+
+
+Taille de la liste

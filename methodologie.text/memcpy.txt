@@ -1,0 +1,24 @@
+Memcpy : Memory copy
+copier une zone memoire.
+Cette fonction copie simplement des données d'une source vers une destination, en supposant que les deux zones ne se chevauchent pas.
+
+1-
+Void *ft_memcpy(void *dest, const void *src, size_t n);
+
+2-
+Copie n octet depuis la zone mémoire src vers la zone memoire dest. Les deux zones ne doivent pas se chevaucher.(contrairement a memmove qui peuvent se chevaucher)
+
+3-
+Renvoie un pointeur sur dest.
+
+ 
+dest : permet de spécifier l'adresse du bloc mémoire devant recevoir les données à copier. Il faut pré-allouer ce bloc de mémoire (via la fonction malloc).
+src : permet de définir l'adresse du bloc de mémoire à dupliquer.
+size_t n = size  : indique le nombre d'octets à dupliquer.
+
+Chevauchement (overlap) signifie que la zone mémoire source et destination partagent une partie de la même région en mémoire.
+Avec memcpy, si les zones se chevauchent, les données peuvent être écrasées avant d’avoir été complètement copiées, ce qui produit des résultats incorrects.
+
+
+Unsigned int (= size_t) = entier dont valeur n est que positive ou nulle 
+Int = entier dont valeur negative ou positive

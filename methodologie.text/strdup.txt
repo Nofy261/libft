@@ -1,0 +1,17 @@
+ft_strdup 
+Dupliquer (copier) une chaine
+
+1-
+char *strdup(const char *s);
+
+
+
+2-
+On copie la chaine s dans une autre chaîne qu on a créer et allouer avec malloc.
+
+
+
+
+
+3-
+renvoie un pointeur sur la chaîne dupliquée, ou NULL s'il n'y avait pas assez de mémoire.  

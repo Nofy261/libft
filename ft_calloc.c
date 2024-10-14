@@ -11,34 +11,19 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-
-void	*ft_memset(void *s, int c, size_t n)
-{
-	size_t	i;
-	char	*str;
-
-	str = s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = c;
-		i++;
-	}
-	return (s);
-}
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
-	size_t	stotal;
+	size_t	total_size;
 
-	if (nmemb == 0 && size == 0)
-		return (NULL);
-	stotal = nmemb * size;
-	ptr = malloc(stotal);
+	total_size = nmemb * size;
+	if (total_size < 0 || ((int)nmemb < 0 && (int)size < 0))
+        	return (NULL);
+
+	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);
-	ft_memset(ptr, '\0', stotal);
+	ft_memset(ptr, '\0', total_size);
 	return (ptr);
 }

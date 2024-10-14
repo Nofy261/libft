@@ -1,0 +1,12 @@
+
+void ft_lstdelone(t_list *lst, void (*del)(void*));
+
+
+
+Supprimer un element(lst) en utilisant une fonction.
+
+
+Pas de retour car void.
+
+
+(Pointeur vers une fonction).

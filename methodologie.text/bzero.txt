@@ -1,0 +1,17 @@
+1-
+Void ft_bzero(void *s, size_t n);
+
+2-
+Met à 0 (octets contenant « \0 ») les n premiers octets dans la memoire pointé par s.  
+
+3-
+Ne retourne rien.
+
+
+s : un pointeur(de type void) vers la zone de mémoire que vous voulez remplir de zéros.
+n : le nombre d'octets à remplir avec des zéros. (Une case = un octet).
+
+En C, les opérations sur des blocs de mémoire sont souvent réalisées au niveau des octets. Un unsigned char en C est typiquement de 1 byte (8 bits), ce qui en fait le type idéal pour manipuler les données au niveau des octets.
+En convertissant s en unsigned char *, vous pouvez ensuite accéder à chaque octet de la mémoire pointée par s via ptr[i] pour y écrire 0.
+
+La conversion de s en unsigned char * est nécessaire pour indiquer explicitement au compilateur que vous souhaitez accéder à la mémoire byte par byte, permettant ainsi à votre fonction ft_bzero de fonctionner correctement.

@@ -1,0 +1,34 @@
+
+applique une fonction à chaque caractère d'une chaîne.
+
+1-
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+
+2-
+
+Permet de modifier les caractères de s grace a la fonction f qui va faire la modification en accédant a l ADRESSE du caractère voulu.
+
+
+
+3-
+La fonctionne retourne rien (void).
+
+
+
+char *s : pointeur vers une chaîne de caractères que vous souhaitez manipuler.
+
+void (*f)(unsigned int, char*) : pointeur vers une fonction qui prend un index et un pointeur vers un caractère.
+
+char* : pointeur vers un caractère
+
+Exemple : Bonjour devient BonZour 
+void    f(unsigned int i, char *ptr)
+{
+    if (i == 3)
+        *ptr = 'Z'; //transforme en U le caractere qui se trouve a l index 3.
+}
+
+
+
+

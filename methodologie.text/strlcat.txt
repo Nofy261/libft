@@ -1,0 +1,37 @@
+1
+Size_t ft_strlcat(char *dest, const char *src, size_t size);
+
+2
+Copie et concatènera des chaines .
+
+3
+strlcat () renvoient la longueur totale de la chaîne qu'elle a essayé de créer c a d la longueur initiale de dst plus la longueur de src.
+
+
+
+
+
+La fonction strlcat () ajoute la chaîne src terminée par NUL à la fin de dst . Elle ajoutera au maximum size - strlen(dst) - 1 octet, terminant le résultat par NUL.
+Prend la taille totale du tampon et pas seulement la longueur(pour strcat et strcpy)
+
+Un buffer est un espace de mémoire réservé pour stocker des données temporaires. Dans le contexte des chaînes de caractères en C, un buffer de destination (ou "buffer de dest") est un espace mémoire dans lequel tu vas stocker la chaîne de caractères finale après la concaténation.
+
+Dans la fonction ft_strlcat, le buffer de dest est l'endroit où la chaîne source src sera ajoutée à la suite de dest. Cependant, il est important de vérifier que ce buffer a suffisamment d'espace pour éviter des dépassements de mémoire (ou "buffer overflow"), car cela peut provoquer des erreurs graves dans un programme C.
+
+Strlcat copie ce qu il peut de src et ajoute '\0' a la fin meme si tout n est pas copier. Et retourne quand meme la somme des longueurs de src et de dest avant la concatenation.
+
+Size représente la taille totale du buffer dans lequel on souhaites concaténer la chaîne. En d'autres termes, size correspond à la taille maximale que dest peut contenir, y compris le caractère nul final \0.
+
+EXEMPLE d'un DEPASSEMENT DE MEMOIRE
+Taille de dest < size :
+
+char dest[9] = "Bonjour";    // Taille de dest = 9
+size_t size = 10;            // size = 10
+ft_strlcat(dest, " les amis", size);
+
+Ici, dest n'a que 9 octets alloués, mais tu passes size = 10, ce qui signifie que ft_strlcat essaiera d'écrire au-delà de la limite de dest, provoquant potentiellement un dépassement de mémoire et des erreurs critiques comme un "abort".
+
+
+
+
+

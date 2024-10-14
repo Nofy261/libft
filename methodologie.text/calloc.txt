@@ -1,0 +1,22 @@
+Allocation et libération dynamiques de mémoire  
+
+1-
+void *calloc(size_t nmemb, size_t size);
+
+
+2-
+
+alloue la mémoire nécessaire pour un tableau nmemb éléments, tout en prenant compte la taille de chaque element. 
+
+size_t nmemb : nombre d'éléments consécutifs à réserver dans le bloc de mémoire. 
+size_t size :la taille (en nombre d'octets) d'un élément.
+
+
+
+3-
+
+Si tout se passe bien, la fonction renvoie un pointeur sur la memoire allouée ou NULL si la demande a échoué .
+
+
+
+Attention, ce pointeur est de type pointeur générique (void *) : si nécessaire, il est donc de votre responsabilité de "caster" votre pointeur vers un autre type.
