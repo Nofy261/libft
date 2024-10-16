@@ -1,35 +1,35 @@
-ft_isalpha ✅  N ok
-ft_isdigit ✅  ok
-ft_isalnum ✅  ok
-ft_isascii ✅  ok
-ft_isprint ✅  ok A REVOIR NORM PB
-ft_strlen  ✅   ok
-ft_memset  ✅   ok return a revoir
-ft_bzero   ✅   ok
-ft_memcpy      ok ✅
-ft_memmove      N ✅
-ft_strlcpy      N ✅
-ft_strlcat      N ✅
-ft_toupper     ok ✅
-ft_tolower     ok ✅
-ft_strchr      ok ✅ une question a resoudre 
-ft_strrchr     N  ✅ seg fault quand on met printf sinon code bon
-ft_strncmp     ok ✅ 
-ft_memchr      ok ✅ 
-ft_memcmp      ok ✅ 
-ft_strnstr ✅ ok comprehension a revoir
-ft_atoi        ok ✅ 
-ft_calloc      ok  ✅ 
-ft_strdup      ok  ✅ 
+ft_isalpha ✅  N ok T
+ft_isdigit ✅  ok   T
+ft_isalnum ✅  ok   T
+ft_isascii ✅  ok   T
+ft_isprint ✅  ok   T
+ft_strlen  ✅  ok   T 
+ft_memset  ✅   ok  T   return a revoir
+ft_bzero   ✅   ok  T
+ft_memcpy      ok ✅ T
+ft_memmove      N ✅  ❌❌❌Comprehension et main a revoir
+ft_strlcpy      N ✅  ❌❌❌
+ft_strlcat      N ✅  ❌❌❌
+ft_toupper     ok ✅  T
+ft_tolower     ok ✅  T
+ft_strchr      ok ✅   seg fault quand elle doit etre null sinon code bon
+ft_strrchr     N  ✅   seg fault quand on met printf dans le main sinon code bon
+ft_strncmp     ok ✅ T
+ft_memchr      ok ✅ T
+ft_memcmp      ok ✅ T
+ft_strnstr ✅ ok     T mais comprehension a revoir (#include <bsd/string.h>)
+ft_atoi        ok ✅ T
+ft_calloc      ok  ✅ T A voir pour affichage
+ft_strdup      ok  ✅ T
 
 NORMINETTE
-ft_substr   ✅  (A REVOIR comprehension)
-ft_strjoin (A TERMINER)
-ft_strtrim   ✅ (A COMPRENDRE) TOO MANY FUNCTION IN FILE
-ft_split (A FAIRE) ✅ A TESTER
-ft_itoa      ✅ ok
-ft_strmapi (FAIT) n ok ✅ 
-ft_striteri (FAIT) n ok
+ft_substr   ✅   T   (A revoir comprehension)
+ft_strjoin  ✅   T 
+ft_strtrim  ✅   ❌  (A revoir comprehension)
+ft_split    ✅   T
+ft_itoa     ✅   T 
+ft_strmapi  ✅   T
+ft_striteri ✅ 
 
 ft_putchar_fd ✅ n ok
 ft_putstr_fd  ✅ n ok

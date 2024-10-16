@@ -1,12 +1,32 @@
 Fonction memset : remplir une zone mémoire avec un octet donné.
   
-1-
+
 void *ft_memset(void *s, int c, size_t n);
 
-2-
+
 La fonction remplit les n premiers caractères pointée par s avec l'octet c.  
 
-3-
+	int c =  indique la valeur à utiliser pour remplir le bloc de mémoire. 
+	size_t n = indique le nombre d'octets à initialiser. 
+
+
 La fonction renvoie un pointeur sur la zone mémoire s.
 
 
+
+#include <stdio.h>
+
+int main(void)
+{
+	char str[7] = "bonjour";
+	
+	printf("copie avant appel :%s\n", str);
+	ft_memset(str, 'A', 3);
+	printf("copie : %s\n\n", str);
+
+	
+	memset(str, 'A', 3);
+	printf("vrai : %s\n", str);
+	
+	return (0);	
+}

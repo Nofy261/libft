@@ -22,3 +22,21 @@ Avec memcpy, si les zones se chevauchent, les données peuvent être écrasées 
 
 Unsigned int (= size_t) = entier dont valeur n est que positive ou nulle 
 Int = entier dont valeur negative ou positive
+
+#include <stdio.h>
+
+int main(void)
+{
+	char dest[10] = "allo";
+	const char src[10] = "Bonjour";
+	
+	printf("dest avant :%s\n", dest);
+	ft_memcpy(dest, src, 2);
+	printf("dest apres appel :%s\n", dest);
+	
+	memcpy(dest, src, 2);
+	printf("vrai :%s\n", dest);
+	
+	return (0);
+	
+}

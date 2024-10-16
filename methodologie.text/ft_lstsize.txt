@@ -5,3 +5,20 @@ Compte le nombre d’éléments de la liste.
 
 
 Taille de la liste
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int	main(void)
+{
+	t_list	*lst;
+
+	lst = malloc(sizeof(t_list));
+	lst->content = "Hello";
+	lst->next = malloc(sizeof(t_list));
+	lst->next->content = "World";
+	lst->next->next = NULL;
+	printf("%d\n", ft_lstsize(lst));
+}

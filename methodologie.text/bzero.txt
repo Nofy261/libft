@@ -15,3 +15,21 @@ En C, les opérations sur des blocs de mémoire sont souvent réalisées au nive
 En convertissant s en unsigned char *, vous pouvez ensuite accéder à chaque octet de la mémoire pointée par s via ptr[i] pour y écrire 0.
 
 La conversion de s en unsigned char * est nécessaire pour indiquer explicitement au compilateur que vous souhaitez accéder à la mémoire byte par byte, permettant ainsi à votre fonction ft_bzero de fonctionner correctement.
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	char str[10] = "Bonjour";
+	char str2[10] = "Bonjour";
+	
+	printf("avant appel :%s\n", str);
+	ft_bzero(str, 5);
+	printf("copie :%s\n\n", &str[5]);//str[5] = "u";
+
+	bzero(str2, 5);
+	printf("vrai :%s\n", &str2[5]);
+	return (0);
+}

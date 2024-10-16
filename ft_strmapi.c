@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:08:58 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 09:59:21 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:44:50 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -32,5 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-
-

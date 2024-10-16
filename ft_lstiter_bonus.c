@@ -6,9 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:48:07 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 10:53:56 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:18:00 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

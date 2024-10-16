@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:11 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 09:01:47 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:24:50 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

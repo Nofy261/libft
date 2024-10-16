@@ -1,13 +1,31 @@
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+
+
+len = taille de la chaine a return et qu on doit allouer.
+start commence a l index 0.
+
+
+SUBSTR("ABCDEF"; 2; 3)--> Renvoie "CDE"
+
+SUBSTR("ABCDEF"; 5; 10)--> Renvoie "F"
+
+SUBSTR("ABC"; 6; 3)--> renvoie une chaine vide qui a ete allouee cad ft_strdup(""); car taille de s= 3 et start = 6 donc ft_strlen(s) < start
+
+
+
 #include <stdio.h>
 
 int main(void)
 {
-    char *result;
-    char const s[] = "Hello World!";
-    unsigned int start = 20;
-    size_t len = 5;
+	char *result;
 
-    result = ft_substr(s, start, len);
-    printf("%s\n", result);
-    free(result);
+	result = ft_substr("ABCD", 3, 2); --> return "D";
+	printf("%s\n", result);
+	
+	
+	free(result);
+	return (0);
 }
+

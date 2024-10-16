@@ -23,9 +23,21 @@ La syntaxe char (*f)(unsigned int, char) se lit comme suit :
     (unsigned int, char) indique les types des paramètres que la fonction prend.
 
 
-char	f(unsigned int i, char c)
+char	str(unsigned int i, char c)
 {
-	if (i == 0)
+	if (i == 3)  // Remplace la lettre a l index 3 par la lettre M
 		return ('M');
 	return (c);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+	char *result;
+
+	result = ft_strmapi("Bonjour", str);
+	printf("%s\n", result);
+	free(result);
+	return (0);
 }

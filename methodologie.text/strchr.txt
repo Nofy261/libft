@@ -18,3 +18,17 @@ Soit le caractère recherché est présent dans la chaîne et, dans ce cas, un p
 
 
 la fonction strchr est très proche de la fonction strrchr. La différence réside dans le fait que strchr renvoi la position de la PREMIERE occurrence du caractère recherché alors que strrchr renvoi la DERNIERE occurrence (recherche par la droite : r signifiant right). 
+
+#include <stdio.h>
+
+int main(void)
+{
+	const char str[] = "Bonjour";
+	int c;
+
+	c = 75;
+	printf("%s\n", ft_strchr(str, c));
+	printf("vrai fonction %s\n", strchr(str, c));
+	
+	return (0);
+}

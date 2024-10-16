@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:08:45 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/14 10:38:35 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:58:14 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

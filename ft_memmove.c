@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:52 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 08:15:26 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 21:16:34 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

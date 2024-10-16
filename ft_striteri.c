@@ -6,11 +6,12 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:08:19 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 10:04:31 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 07:37:37 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
@@ -23,10 +24,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		f(i, &s[i]);
 		i++;
 	}
-}
-
-void	f(unsigned int i, char *ptr)
-{
-	if (i == 3)
-		*ptr = 'Z';
 }

@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:52:40 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 11:52:01 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 10:31:38 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {

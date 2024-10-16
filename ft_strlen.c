@@ -6,11 +6,12 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:08:51 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 07:54:00 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 09:01:28 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

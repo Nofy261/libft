@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:44:09 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 09:06:21 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:53:44 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	total_size = nmemb * size;
 	if (total_size < 0 || ((int)nmemb < 0 && (int)size < 0))
-        	return (NULL);
-
+		return (NULL);
 	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);

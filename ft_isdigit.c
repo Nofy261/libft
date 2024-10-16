@@ -6,11 +6,12 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:46:14 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 11:52:57 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 08:37:45 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

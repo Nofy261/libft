@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:43:20 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/07 12:43:23 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 11:04:49 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {

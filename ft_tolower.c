@@ -6,13 +6,13 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:40 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/14 11:47:24 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:49:25 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c += 32);
+		return (c + 32);
 	return (c);
 }

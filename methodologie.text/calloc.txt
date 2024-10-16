@@ -1,12 +1,11 @@
-Allocation et libération dynamiques de mémoire  
+Allocation  de mémoire  et initialse a zero 
 
 1-
 void *calloc(size_t nmemb, size_t size);
 
 
-2-
+2- alloue de la mémoire pour un tableau d'entiers nmemb de la taille size et initialise chaque élément à zéro. 
 
-alloue la mémoire nécessaire pour un tableau nmemb éléments, tout en prenant compte la taille de chaque element. 
 
 size_t nmemb : nombre d'éléments consécutifs à réserver dans le bloc de mémoire. 
 size_t size :la taille (en nombre d'octets) d'un élément.
@@ -19,4 +18,26 @@ Si tout se passe bien, la fonction renvoie un pointeur sur la memoire allouée o
 
 
 
-Attention, ce pointeur est de type pointeur générique (void *) : si nécessaire, il est donc de votre responsabilité de "caster" votre pointeur vers un autre type.
+Ce pointeur est de type pointeur générique (void *) : si nécessaire, il faut "caster" le pointeur vers un autre type.
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	char *result;
+	int	i;
+
+	i = 0;
+	result = ft_calloc(6, 1);
+	printf("copie %s\n", result);
+	result = calloc(3, 2);
+	while (i < 4)
+	{
+		printf("%d\n", result[i]);
+		i++;
+	}
+
+	printf("vrai %s\n", result);
+}

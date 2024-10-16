@@ -1,0 +1,41 @@
+
+
+char	**ft_split(char const *s, char c);
+
+
+
+
+On compte le nombre de mot 
+On copie mot par mot dans un tableau'
+On copie mot par mot dans le tableau de tableau tout en allouant mot par mot
+A la fin j'alloue de la memoire pour le tableau de tableau.
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	char const s[] = "Bonjour les amis";
+	char **result;
+
+	int i = 0;
+	result = ft_split(s, ' ');
+	while (result[i])
+	{
+		printf("%s\n", result[i]);
+		free(result[i]);//free case par case 
+		i++;
+	}
+	free(result);
+}
+Resultat attendu --> char *result[] = {"Bonjour", "les", "amis", NULL};

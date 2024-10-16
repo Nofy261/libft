@@ -10,3 +10,20 @@ La fonction memmove() copie n octets depuis la zone m√©moire src vers la zone m√
 
 3-
 Renvoie un pointeur sur dest.
+
+#include <stdio.h>
+
+int main(void)
+{
+	char src[] = "...Bon";
+	char dest[] ="Allo";
+	
+	printf("dest avant %s\n", dest);
+	ft_memmove(dest, src, 5);
+	//printf("dest apres  %s\n\n", dest);
+	
+	printf("dest apres  %s\n\n", dest);
+	//memmove(dest, src, 5);
+	//printf("vrai  %s\n", dest);
+	return (0);
+}

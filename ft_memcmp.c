@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:37 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/07 12:49:38 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 10:25:09 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

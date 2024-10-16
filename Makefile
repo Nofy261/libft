@@ -2,7 +2,7 @@ NAME = libft.a
 
 CC = cc
 
-CFLAGS = -Wal Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra -g
 
 FSRCS = ft_isalpha.c \
 	ft_isdigit.c \
@@ -37,9 +37,22 @@ FSRCS = ft_isalpha.c \
 	ft_putchar_fd.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
-	ft_putnbr_fd. \
+	ft_putnbr_fd.c \
+
+FBONUS = ft_lstadd_back_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstclear_bonus.c \
+ 		ft_lstdelone_bonus.c \
+ 		ft_lstiter_bonus.c \
+ 		ft_lstlast_bonus.c \
+ 		ft_lstmap_bonus.c \
+ 		ft_lstnew_bonus.c \
+		ft_lstsize_bonus.c \
+
 	
 OFILES = $(FSRCS:.c=.o)
+
+OFBONUS = $(FBONUS:.c=.o)
 
 ARRC=ar -rc
 

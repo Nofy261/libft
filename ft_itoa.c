@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:46:35 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/09 16:19:25 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:30:37 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	count_len(int n)
 {

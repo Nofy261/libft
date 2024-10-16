@@ -6,16 +6,13 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:18 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/14 17:45:55 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 21:05:23 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
-#include <string.h>
-#include <stdio.h>
-
-char	*ft_strrchr(const char *s, int c)//seg fault quand je mets printf dans le main
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
@@ -29,14 +26,4 @@ char	*ft_strrchr(const char *s, int c)//seg fault quand je mets printf dans le m
 		i--;
 	}
 	return (NULL);
-}
-
-int main(void)
-{
-	const char s[] = "Bnjur";
-	int c = 111;
- 	char *s2 = ft_strrchr(s, c);
-	printf("%s\n", s2);
-	printf("%s\n", strrchr(s, c));
-	return (0);
 }

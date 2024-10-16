@@ -6,12 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:44 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 07:56:25 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/15 11:35:54 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

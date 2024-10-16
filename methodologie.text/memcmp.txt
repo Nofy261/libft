@@ -10,3 +10,23 @@ La fonction memcmp() compare les n premiers octets de s1 et s2 peu importe les t
 3-
 Renvoie la difference entre s1 et s2 ou 0 si pas de différences
 
+
+Memcmp compare une zone de memoire sans se soucier de la fin de chaine de carateres '\0' contrairement a strncmp qui prend en compte '\0'
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	const char src[] = "b  ";
+	const char dest[] = "a  ";
+
+	int	i;
+
+	i = ft_memcmp(dest, src, 2);
+	printf("copie %d\n", i);
+	
+	i = memcmp(dest, src, 2);
+	printf("original %d\n", i);
+	return (0);
+}

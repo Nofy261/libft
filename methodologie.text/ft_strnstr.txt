@@ -1,7 +1,12 @@
 
+#include <bsd/string.h>
+
+Compilation: cc -Wall -Werror -Wextra ft_strnstr.c -lbsd
+
 
 1-
-char * strnstr(const char *  s1 , const char *  s2 , size_t  len );
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+
 
 2-
 Cherche l'integralité de s2 dans s1 a partir de la premiere lettre de s2.
@@ -10,10 +15,28 @@ Cherche le premier occurence de s2 dans s1 jusqu'à a n taille
 3-
 Renvoie la chaine de caractère a partir de l occurence trouvé ou null si s2 n'a pas été trouveé
 
+Si s2 est trouver dans s1 , la fonction va afficher tous le reste de s1 a partir du mot trouver jusqu a la fin peu importe la taille de len.
+
 
 EX:
- S1 = "Hello my friend"
+ S1 = "Hello my friend you"
  S2 = " friend"
  Len = 16
 
-Resultat = "friend" (s1)
+Resultat = "friend you" (s1)
+
+#include <stdio.h>
+
+int main(void)
+{
+	const char big[] = "Hello my friend";
+	const char little[] = "my";
+	char *result;
+	
+	result = ft_strnstr(big, little, 10);
+	printf("copie %s\n", result);
+	
+	result = strnstr(big, little, 10);
+	printf("original %s\n", result);
+	return (0);
+}

@@ -6,10 +6,9 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:42:47 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/14 10:12:22 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:30:42 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_atoi(const char *nptr)
 {

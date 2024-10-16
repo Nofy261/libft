@@ -15,7 +15,7 @@ Le premier octet correspondant à c (interprété comme un unsigned char) arrêt
 Renvoie un pointeur sur c ou null si le caractère n'est pas present.
 
 
-on traite un bloc de mémoire et non pas une chaîne de caractères AZT (à zéro terminal)
+on traite un bloc de mémoire et non pas une chaîne de caractères
 la fonction memchr est conçue pour travailler avec des octets non signés. (Unsigned const char )
 
 Ex:

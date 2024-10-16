@@ -1,0 +1,17 @@
+char	*ft_itoa(int n);
+
+Convertir un entier en chaine
+
+Retourne une chaine de caractere.
+ 
+
+
+Je compte le nombre de chiffre ainsi que signe moins. 
+Je remplis la chaine par les chiffres. Je remplis par la fin .
+
+
+
+
+
+size_t = valeur que positive,(non-signé) plus grand que un int.
+Int = peut être négatif ou positif.
