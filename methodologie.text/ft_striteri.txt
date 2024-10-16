@@ -22,11 +22,22 @@ void (*f)(unsigned int, char*) : pointeur vers une fonction qui prend un index e
 
 char* : pointeur vers un caractère
 
-Exemple : Bonjour devient BonZour 
-void    f(unsigned int i, char *ptr)
+void	f(unsigned int i, char *set)
 {
-    if (i == 3)
-        *ptr = 'Z'; //transforme en U le caractere qui se trouve a l index 3.
+	(void)i;
+	if (set[0] >= 'A' && set[0] <= 'Z')
+		set[0] += 32;
+
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+	char s[] = "HellO";
+	ft_striteri(s, f);
+	printf("%s\n", s);
+
 }
 
 
