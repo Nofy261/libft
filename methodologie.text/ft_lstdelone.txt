@@ -10,3 +10,36 @@ Pas de retour car void.
 
 
 (Pointeur vers une fonction).
+
+
+void	del(void *content)
+{
+	(void)content;
+}
+
+int main(void)
+{
+	t_list	*ptr;
+	ptr = NULL;
+
+	t_list	*node1;
+	t_list	*node2;
+	t_list	*node3;
+
+	char	content1[] = "Un";
+	char	content2[] = "Deux";
+	char	content3[] = "Trois";
+
+	node1 = ft_lstnew(content1);
+	node2 = ft_lstnew(content2);
+	node3 = ft_lstnew(content3);
+
+	ft_lstadd_back(&ptr, node1);
+	ft_lstadd_back(&ptr, node2);
+	ft_lstadd_back(&ptr, node3);
+
+	printf("avant %s\n", (char *)ptr->next->content);
+	//ft_lstdelone(node2, del);
+	printf("apres %s\n", (char *)ptr->content);
+	return (0);
+}

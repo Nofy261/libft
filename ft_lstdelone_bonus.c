@@ -6,9 +6,11 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:47:58 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 10:40:00 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/17 14:29:34 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

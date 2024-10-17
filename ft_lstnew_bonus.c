@@ -6,12 +6,12 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:12 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 10:23:19 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/17 08:45:38 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
+#include "libft.h"
+					
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*newnode;

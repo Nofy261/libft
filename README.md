@@ -36,13 +36,13 @@ ft_putstr_fd  ✅ n ok T
 ft_putendl_fd ✅ n ok T
 ft_putnbr_fd  ✅ n ok  T
 BONUS
-ft_lstnew       ✅    main a faire n ok
-ft_lstadd_front ✅    main a faire n ok
-ft_lstsize      ✅    main a faire n ok
-ft_lstlast      ✅    main a faire n ok
-ft_lstadd_back . ✅  main a faire  n ok
-ft_lstdelone . ✅  main a faire    n ok
-ft_lstclear  ✅ main a faire     n ok
-ft_lstiter  ✅                   n ok
-ft_lstmap  ✅                    n ok
+ft_lstnew       ✅  T main a faire n ok
+ft_lstadd_front ✅  T  n ok
+ft_lstsize      ✅  T  main a faire n ok
+ft_lstlast      ✅  T  main a faire n ok
+ft_lstadd_back .✅  T n ok
+ft_lstdelone .  ✅  T  main a faire    n ok
+ft_lstclear     ✅    main a faire     n ok
+ft_lstiter      ✅                   n ok
+ft_lstmap       ✅                    n ok
 ✅ ❌

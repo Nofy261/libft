@@ -4,12 +4,49 @@ int ft_lstsize(t_list *lst);
 Compte le nombre d’éléments de la liste.
 
 
-Taille de la liste
+Retourne la Taille de la liste.
+
+
 
 
 
 
 #include <stdio.h>
+
+int main(void)
+{
+	t_list	*ptr;
+	ptr = NULL;
+
+	int	i;
+	
+	t_list	*node1;//je declare les variables
+	t_list	*node2;
+	t_list	*node3;
+
+	char content1[] = "premier";// je rajoute les contenus de chaque variable
+	char content2[] = "deuxieme";
+	char content3[] = "troisieme";
+	
+	node3 = ft_lstnew(content3);// je creer le maillon pour la liste chainee
+	node2 = ft_lstnew(content2);
+	node1 = ft_lstnew(content1);
+
+	ft_lstadd_front(&ptr, node3);// je les place un par un au premier de la liste
+	ft_lstadd_front(&ptr, node2);
+	ft_lstadd_front(&ptr, node1);//sera afficher en premier dans la liste
+	
+	i = ft_lstsize(ptr);// je compte le nombre de maillons dans la liste
+	printf("%d\n", i);
+	
+	printf("%s\n", (char *)ptr->content);//affiche le 1er de la liste
+	printf("%s\n", (char *)ptr->next->content);//affiche le 2eme
+	printf("%s\n", (char *)ptr->next->next->content);//ainsi de suite
+	
+	
+	return (0);	
+}
+      OU
 #include <stdlib.h>
 int	main(void)
 {

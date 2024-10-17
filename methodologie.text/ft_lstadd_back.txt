@@ -12,3 +12,36 @@ Pas de valeur de retour car void
 
 
 Je fais pointer le pointeur de new vers NULL
+
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	t_list	*ptr;
+	ptr = NULL;
+
+	t_list	*node1;
+	t_list	*node2;
+
+	char firstcontent[] = "Hola";
+	char secondcontent[] = "Bonjour";
+
+	node1 = ft_lstnew(firstcontent);
+	node2 = ft_lstnew(secondcontent);
+
+	ft_lstadd_back(&ptr, node1);
+	ft_lstadd_back(&ptr, node2);
+
+	printf("1er element %s\n", (char *)ptr->content);
+	printf("2eme element %s\n", (char *)ptr->next->content);
+
+	return (0);	
+}
+
+Dans la listechainee = node1("Hola" | ptrnext) ---> node2("Bonjour" | ptrnext);
+
+node1 en premier car c'est ce qu'on a mis a la fin en premier
+node2 en dernier car c'est ce qu'on a mis a la fin en dernier donc il est dernier de la liste.
