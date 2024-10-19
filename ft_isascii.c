@@ -6,11 +6,9 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:45:57 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/15 08:51:27 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:29:50 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:09:24 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/15 11:07:52 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:27:26 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (result);
 }
-

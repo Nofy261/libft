@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:44 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/15 11:35:54 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:37:05 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const char	*src2;
 	size_t		i;
 
+	if (!dest && !src)
+		return (NULL);
 	dest2 = dest;
 	src2 = src;
 	i = 0;

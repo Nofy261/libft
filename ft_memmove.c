@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:52 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/15 21:16:34 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:41:50 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char	*s;
 	size_t	i;
 
+	if (!dest && !src)
+		return (NULL);
 	d = (char *)dest;
 	s = (char *)src;
 	i = 0;
@@ -30,12 +32,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+		ft_memcpy(dest, src, n);
 	return (dest);
 }

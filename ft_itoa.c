@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:46:35 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/16 18:30:37 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:35:11 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static size_t	count_len(int n)
 	return (len);
 }
 
-static void	fill_str(char *str, int n, size_t len)
+static char	*fill_str(char *str, int n, size_t len)
 {
 	size_t	i;
 
@@ -47,6 +47,7 @@ static void	fill_str(char *str, int n, size_t len)
 		str[len] = n % 10 + '0';
 		n /= 10;
 	}
+	return (str);
 }
 
 char	*ft_itoa(int n)
@@ -55,9 +56,14 @@ char	*ft_itoa(int n)
 	size_t	len;
 
 	len = count_len(n);
+	if (n == -2147483648)
+	{
+		result = ft_strdup("-2147483648");
+		return (result);
+	}
 	result = malloc(sizeof(char) * len + 1);
 	if (!result)
 		return (NULL);
-	fill_str(result, n, len);
+	result = fill_str(result, n, len);
 	return (result);
 }

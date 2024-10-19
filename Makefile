@@ -61,14 +61,16 @@ all : $(NAME)
 $(NAME) : $(OFILES)
 		$(ARRC) $(NAME) $(OFILES)
 
+bonus : $(OFBONUS)
+		$(ARRC) $(NAME) $(OFBONUS)
 clean :
-	rm -f $(OFILES)
+	rm -f $(OFILES) $(OFBONUS)
 
 fclean : clean
 	rm -f $(NAME)
 	
 re : fclean $(NAME)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 		
 

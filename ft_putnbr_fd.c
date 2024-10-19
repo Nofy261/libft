@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:06:38 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/08 10:17:26 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:28:24 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
 }
-

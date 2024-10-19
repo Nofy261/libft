@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:27 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/16 09:40:57 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:49:18 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t				i;
-	const unsigned char	*s2 = (const unsigned char *)s;
+	const unsigned char	*s2;
 
+	s2 = (const unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
