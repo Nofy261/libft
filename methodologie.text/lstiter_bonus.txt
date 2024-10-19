@@ -1,0 +1,39 @@
+
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+
+
+Itère sur la liste ’lst’ et applique la fonction
+’f’ au contenu chaque élément.
+
+
+
+
+EXEMPLE: la fonction va afficher le contenu de chaque element
+
+void	f(void *content)
+{
+		printf("%s\n", (char *)content);
+}
+
+
+int main(void)
+{
+	t_list	*ptr;
+	ptr = NULL;
+
+	t_list	*node1;
+	t_list	*node2;
+
+	char content1[] = "Hello1";
+	char content2[] = "Salut2";
+
+	node1 = ft_lstnew(content1);
+	node2 = ft_lstnew(content2);
+
+	ft_lstadd_back(&ptr, node1);
+	ft_lstadd_back(&ptr, node2);
+
+	ft_lstiter(ptr, f);
+	return (0);
+}

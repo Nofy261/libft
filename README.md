@@ -41,8 +41,8 @@ ft_lstadd_front ✅  T  n ok
 ft_lstsize      ✅  T  main a faire n ok
 ft_lstlast      ✅  T  main a faire n ok
 ft_lstadd_back .✅  T n ok
-ft_lstdelone .  ✅  T  main a faire    n ok
-ft_lstclear     ✅    main a faire     n ok
-ft_lstiter      ✅                   n ok
-ft_lstmap       ✅                    n ok
+ft_lstdelone .  ✅  T  TEST A FINIR   n ok 
+ft_lstclear     ✅  ❌ main a faire     n ok
+ft_lstiter      ✅  T               n ok
+ft_lstmap       ✅                   n ok
 ✅ ❌

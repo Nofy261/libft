@@ -14,7 +14,7 @@ Pas de retour car void.
 
 void	del(void *content)
 {
-	(void)content;
+	(void)content;//ou free(content)???
 }
 
 int main(void)

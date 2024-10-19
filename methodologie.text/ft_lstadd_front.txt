@@ -13,30 +13,42 @@ ptr->content (acceder au contenu du 1er maillon)
 ptr->next->content (acceder au contenu du 2eme maillon)
 
 
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
+	new->next = *lst;//Je fais pointer le noeud que je viens de creer vers *lst qui est la tete
+	*lst = new;// puis *lst maintenant pointe vers new donc new devient le premier de la liste 
+}
 
-/int    main()
-//{
-    // Déclaration d'un pointeur vers la tête de liste
-    //t_list *lst;
-    //lst = NULL;
-    
-    // Déclaration de deux nouveaux éléments de la liste
-    //t_list    *new1;           // Premier nouvel élément
-    //t_list    *new_2;          // Deuxième nouvel élément
 
-    // Chaînes de caractères à stocker dans la liste
-    //char str[] = "bonjour";  // Contenu du premier élément
-    //char str2[] = "salut";   // Contenu du deuxième élément
 
-    // Création des nouveaux éléments
-    //new1 = ft_lstnew(str);   // Crée un élément avec le contenu "bonjour"
-    //new_2 = ft_lstnew(str2); // Crée un élément avec le contenu "salut"
+int    main()
+{
+   
+    t_list *lst;
+    lst = NULL;
     
-    // Ajout des éléments en tête de liste
-    //ft_lstadd_front(&lst, new1);  // Ajoute l'élément "bonjour" en tête de liste
-    //ft_lstadd_front(&lst, new_2); // Ajoute l'élément "salut" en tête de liste
     
-    Affichage des contenus des éléments de la liste
+    t_list    *new1;           // Premier nouvel élément
+    t_list    *new_2;          // Deuxième nouvel élément
+
+    
+    char str[] = "bonjour";  // Contenu du premier élément
+    char str2[] = "salut";   // Contenu du deuxième élément
+
+    
+    new1 = ft_lstnew(str);   // Crée un élément avec le contenu "bonjour"
+    new_2 = ft_lstnew(str2); // Crée un élément avec le contenu "salut"
+    
+    
+    ft_lstadd_front(&lst, new1);  // Ajoute l'élément "bonjour" en tête de liste
+    ft_lstadd_front(&lst, new_2); // Ajoute l'élément "salut" en tête de liste
+    
+    
    printf("%s\n", (char *)lst->content);         // Affiche le contenu du premier élément ("salut")
    printf("%s\n", (char *)lst->next->content);   // Affiche le contenu du deuxième élément ("bonjour")
     

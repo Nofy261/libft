@@ -20,3 +20,41 @@ Typedef struct s_list
 Del(*lst = *lst->next)
 Lst == NULL;
 free(lst); 
+
+
+void	del(void *content)
+{
+	(void)content;
+}
+
+int main(void)
+{
+	t_list	*ptr;
+	ptr = NULL;
+
+	t_list	*node1;
+	t_list	*node2;
+	t_list	*node3;
+
+	char	content1[] = "Un";
+	char	content2[] = "Deux";
+	char	content3[] = "Trois";
+
+	node1 = ft_lstnew(content1);
+	node2 = ft_lstnew(content2);
+	node3 = ft_lstnew(content3);
+
+	ft_lstadd_front(&ptr, node3);
+	ft_lstadd_front(&ptr, node2);
+	ft_lstadd_front(&ptr, node1);
+	
+	printf("%s\n", (char *)ptr->content);
+	printf("%s\n", (char *)ptr->next->content);
+	
+	ft_lstclear(&ptr, del);
+	if (ptr == NULL)
+		printf("La liste est vide\n");
+	else
+		printf("%s\n", (char *)ptr->content);
+	return (0);
+}

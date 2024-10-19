@@ -21,7 +21,7 @@ int main(void)
 {
 	char *result;
 
-	result = ft_substr("ABCD", 3, 2); --> return "D";
+	result = ft_substr("ABCD", 3, 2); --> return "D'\0'";
 	printf("%s\n", result);
 	
 	
