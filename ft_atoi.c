@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:42:47 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/16 11:30:42 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:01:32 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,14 @@ int	ft_atoi(const char *nptr)
 		i++;
 	}
 	return (stock * sign);
+}
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char **argv)
+{
+	(void)argc;
+	printf("%d\n", ft_atoi(argv[1]));
+	printf("vrai %d\n", atoi(argv[1]));
+	return (0);
 }

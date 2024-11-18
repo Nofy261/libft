@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:49:02 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/19 18:19:50 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/23 09:41:56 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*the_list;
+	t_list	*new_list;
 	t_list	*element;
 
 	if ((!lst) || (!f) || (!del))
 		return (NULL);
-	the_list = NULL;
+	new_list = NULL;
 	element = NULL;
 	while (lst != NULL)
 	{
 		element = ft_lstnew(f(lst->content));
 		if (!element)
 		{
-			ft_lstclear(&the_list, del);
+			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&the_list, element);
+		ft_lstadd_back(&new_list, element);
 		lst = lst->next;
 	}
-	return (the_list);
+	return (new_list);
 }

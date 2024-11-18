@@ -1,4 +1,15 @@
 
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+
+
+ft_lstmap transforme chaque élément d'une liste chaînée en appliquant une fonction, tout en créant une nouvelle liste chaînée avec ces éléments transformés. Elle gère aussi les erreurs en nettoyant la mémoire si une opération échoue.
+
+
+
+
+
+
 void    *to_upper(void *content)
 {
     char    *str;

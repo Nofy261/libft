@@ -63,6 +63,7 @@ $(NAME) : $(OFILES)
 
 bonus : $(OFBONUS)
 		$(ARRC) $(NAME) $(OFBONUS)
+		
 clean :
 	rm -f $(OFILES) $(OFBONUS)
 

@@ -40,6 +40,6 @@ int main(void)
 	ft_lstadd_front(&ptr, node1);
 	
 	test = ft_lstlast(ptr); //test pointe vers le dernier element.
-	printf("%s\n", (char *)test->content);
+	printf("%s\n", (char *)test->content);// affiche "Trois"
 	return (0);	
 }

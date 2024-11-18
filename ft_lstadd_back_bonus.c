@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:47:31 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/17 11:45:37 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/23 11:14:11 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		tmp = tmp->next;
 	tmp->next = new;
 }
+

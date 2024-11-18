@@ -6,7 +6,7 @@
 /*   By: nolecler <nolecler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:06:57 by nolecler          #+#    #+#             */
-/*   Updated: 2024/10/16 18:13:52 by nolecler         ###   ########.fr       */
+/*   Updated: 2024/10/23 10:30:26 by nolecler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,24 @@ static size_t	count_words(const char *s, char c)
 			}
 		}
 		else
-		{
 			is_word = 0;
-		}
 		i++;
 	}
 	return (counter);
+}
+
+static void	*free_all(char **str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+	return (NULL);
 }
 
 static void	fill_result(char *new, char const *str, char c)
@@ -70,7 +82,7 @@ static void	set_mem(char **result, char const *str, char sep)
 		{
 			result[i] = malloc(sizeof(char) * (count + 1));
 			if (!result[i])
-				return ;
+				(free_all(result));
 			fill_result(result[i], (str + j), sep);
 			i++;
 			j = j + count;
@@ -86,6 +98,8 @@ char	**ft_split(char const *s, char c)
 	size_t	words;
 	char	**result;
 
+	if (!s)
+		return (NULL);
 	words = count_words(s, c);
 	result = malloc(sizeof(char *) * (words + 1));
 	if (!result)
